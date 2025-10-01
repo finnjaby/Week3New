@@ -27,6 +27,16 @@ public class MainApp {
                 result = calc.mul(firstNum, secondNum);
                 System.out.println(result);
                 break;
+            case "divide":
+                if(secondNum == 0){
+                    System.out.println("Cannot divide by zero");
+                    break;
+                }
+                else {
+                    result = calc.div(firstNum, secondNum);
+                    System.out.println(result);
+                    break;
+                }
         }
 
     }
