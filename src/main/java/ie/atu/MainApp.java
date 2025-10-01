@@ -7,13 +7,18 @@ public class MainApp {
         Scanner sc = new Scanner(System.in);
         // Create an instance of Calculator
         Calculator calc = new Calculator();
-        System.out.println("Simple Calculator - Add Two Numbers");
+        System.out.println("Choose an operation: ");
+        String operator = sc.next();
         System.out.print("Enter first number: ");
         int firstNum = sc.nextInt();
         System.out.print("Enter second number: ");
         int secondNum = sc.nextInt();
-        int result = calc.add(firstNum, secondNum);
-        System.out.println("Result: " + result);
-        sc.close();
+        switch (operator) {
+            case "add":
+                int result =calc.add(firstNum, secondNum);
+                System.out.println(result);
+                break;
+        }
+
     }
 }
