@@ -9,10 +9,10 @@ public class MainApp {
         Calculator calc = new Calculator();
         System.out.println("Simple Calculator - Add Two Numbers");
         System.out.print("Enter first number: ");
-        int a = sc.nextInt();
+        int firstNum = sc.nextInt();
         System.out.print("Enter second number: ");
-        int b = sc.nextInt();
-        int result = calc.add(a, b);
+        int secondNum = sc.nextInt();
+        int result = calc.add(firstNum, secondNum);
         System.out.println("Result: " + result);
         sc.close();
     }
