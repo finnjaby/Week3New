@@ -22,6 +22,11 @@ public class MainApp {
             case "subtract":
                  result = calc.sub(firstNum, secondNum);
                 System.out.println(result);
+                break;
+            case "multiply":
+                result = calc.mul(firstNum, secondNum);
+                System.out.println(result);
+                break;
         }
 
     }
