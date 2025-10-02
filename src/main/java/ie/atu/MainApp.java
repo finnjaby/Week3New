@@ -8,12 +8,15 @@ public class MainApp {
         // Create an instance of Calculator
         int result = 0;
         Calculator calc = new Calculator();
+        //user input
         System.out.println("Choose an operation: ");
         String operator = sc.next();
         System.out.print("Enter first number: ");
         int firstNum = sc.nextInt();
         System.out.print("Enter second number: ");
         int secondNum = sc.nextInt();
+
+        //references to calculator file
         switch (operator) {
             case "add":
                 result =calc.add(firstNum, secondNum);
@@ -28,7 +31,7 @@ public class MainApp {
                 System.out.println(result);
                 break;
             case "divide":
-                if(secondNum == 0){
+                if(secondNum == 0){                             //check for divide by 0 error
                     System.out.println("Cannot divide by zero");
                     break;
                 }
