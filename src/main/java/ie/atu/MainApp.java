@@ -41,6 +41,13 @@ public class MainApp {
                 result = calc.mod(firstNum, secondNum);
                 System.out.println(result);
                 break;
+            case "power":
+                double res = calc.power(firstNum, secondNum);
+                System.out.println(res);
+                break;
+            default:
+                System.out.println("Invalid operation, choose:\nadd\nsubtract\nmultiply\ndivide\nmodulo\npower");
+                break;
         }
 
     }
