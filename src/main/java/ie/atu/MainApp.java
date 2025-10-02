@@ -37,6 +37,10 @@ public class MainApp {
                     System.out.println(result);
                     break;
                 }
+            case "modulo":
+                result = calc.mod(firstNum, secondNum);
+                System.out.println(result);
+                break;
         }
 
     }
